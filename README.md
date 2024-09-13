@@ -1,5 +1,6 @@
 # CBX`s RPnames For Exiled
- 
+ ![GitHub Downloads (all assets, all releases)]([https://img.shields.io/github/downloads/Saskyc/MyPlugin.dll/total](https://img.shields.io/github/downloads/CBXPL/CBX-RPNamesEXILED/total
+))
 # Well Documented And Actively Updated Plugin
 
 # Features:
