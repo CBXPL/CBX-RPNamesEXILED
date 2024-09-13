@@ -43,7 +43,7 @@ namespace RPNames
         public bool ShowNick { get; set; } = true;
 
         [Description("Should Player Nickname Show After Custom Nickname?")]
-        public bool ShowRealName { get; set; } = false;
+        public bool ShowRealName { get; set; } = true;
 
         [Description("Editable Human Prefixes")]
         public Dictionary<RoleTypeId, string> ClassTitles { get; set; } = new Dictionary<RoleTypeId, string>
@@ -108,7 +108,7 @@ namespace RPNames
         };
 
         [Description("List Of Names [Can Be Edited Without Errors] ")]
-        public List<string> HumanNames { get; set; } = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon" };
+        public List<string> HumanNames { get; set; } = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon", "C. Cobble", "O. May", "V. Base", "D. Kevinson", "I. Zenix" };
 
     }
 }
