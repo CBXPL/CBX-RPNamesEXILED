@@ -4,7 +4,7 @@
 
 # Features:
 1. Optimized And Smooth Code That Wont Lag The server
-2. 15+ Human Names
+2. 9+ Human Names
 3. Well Explained Config
 
 # What to Expect?
