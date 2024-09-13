@@ -7,8 +7,8 @@
     <ProjectGuid>{FBB00170-404E-4797-B673-3B390186EED6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RPNames</RootNamespace>
-    <AssemblyName>RPNames</AssemblyName>
+    <RootNamespace>RPNamesCBX</RootNamespace>
+    <AssemblyName>RPNamesCBX</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

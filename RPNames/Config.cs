@@ -17,35 +17,35 @@ namespace RPNames
         [Description("Is the Debug on?")]
         public bool Debug { get; set; } = false;
 
-        [Description("Random numbers for instances of 939 or 049?")]
+        [Description("Should There Be Random Instance Numbers at SCPS?")]
 
         public bool randnum { get; set; } = false;
 
-        [Description("Should people lose nick when they turn into a tutorial?")]
+        [Description("Should Nick Clear Out After Changing To Tutorial?")]
         public bool TutorialNick { get; set; } = true;
 
-        [Description("Should Class-D be D-#### (true) or should it follow the other names with Title + Name (false)?")]
+        [Description("Should Class D Have Random Number After Their Name?")]
         public bool DboisSetting { get; set; } = true;
 
-        [Description("Should SCPs have their SCP as a name (true) or should they be hidden as a D-Class (false)?")]
+        [Description("Should SCP`s Have Custom Names?")]
         public bool SCPSetting { get; set; } = true;
 
-        [Description("Should Zombies NOT have names? (THIS OVERRIDES SCPSETTINGS)")]
+        [Description("Should SCP 049-2 Not Have Custom Names?")]
         public bool ZombieNames { get; set; } = false;
 
         [Description("Use only human_names (dbois setting must be on!)?")]
         public bool randomnames { get; set; } = false;
 
-        [Description("Should nicknames reset on death?")]
+        [Description("Should Nickname Clear After Death?")]
         public bool DeathReset { get; set; } = true;
 
-        [Description("Should a player be told their nickname?")]
+        [Description("Should Player Nickname Be Shown At The Respawn?")]
         public bool ShowNick { get; set; } = true;
 
-        [Description("Should a player have there real name after their nickname?")]
+        [Description("Should Player Nickname Show After Custom Nickname?")]
         public bool ShowRealName { get; set; } = false;
 
-        [Description("A dictionary with classes and their title")]
+        [Description("Editable Human Prefixes")]
         public Dictionary<RoleTypeId, string> ClassTitles { get; set; } = new Dictionary<RoleTypeId, string>
         {
             {
@@ -55,31 +55,31 @@ namespace RPNames
                 RoleTypeId.Scientist, "Dr."
             },
             {
-                RoleTypeId.FacilityGuard, "Oficer"
+                RoleTypeId.FacilityGuard, "Officer"
             },
             {
-                RoleTypeId.NtfCaptain, "Kapitan"
+                RoleTypeId.NtfCaptain, "Captain"
             },
             {
-                RoleTypeId.NtfPrivate, "Kadet"
+                RoleTypeId.NtfPrivate, "Cadet"
             },
             {
-                RoleTypeId.NtfSergeant, "Porucznik"
+                RoleTypeId.NtfSergeant, "Sergeant"
             },
             {
-                RoleTypeId.NtfSpecialist, "Agent Polowy"
+                RoleTypeId.NtfSpecialist, "Agent"
             },
             {
-                RoleTypeId.ChaosConscript, "Agent of Chaos"
+                RoleTypeId.ChaosConscript, "Chaos Agent"
             },
             {
-                RoleTypeId.ChaosMarauder, "Agent of Chaos"
+                RoleTypeId.ChaosMarauder, "Chaos Agent"
             },
             {
-                RoleTypeId.ChaosRepressor, "Agent of Chaos"
+                RoleTypeId.ChaosRepressor, "Chaos Agent"
             },
             {
-                RoleTypeId.ChaosRifleman, "Agent of Chaos"
+                RoleTypeId.ChaosRifleman, "Chaos Agent"
             },
             {
                 RoleTypeId.Scp049, "SCP-049"
@@ -107,8 +107,8 @@ namespace RPNames
             },
         };
 
-        [Description("The list of names to be given. (Leave empty for default, if you want to make your own list, look at readme) ")]
-        public List<string> HumanNames { get; set; } = new List<string> { "Woodson", "Winthrop", "Wall", "Wight", "Webb", "Woodard", "Wixx", "Wong", "Whesker", "Wolfenstein", "Rooney", "Russo", "Rude", "Roland", "Reader", "Renshaw", "Rossi", "Riddle", "Ripa", "Richter", "Rosenberg", "Romo", "Ramirez", "Reagan", "Rainwater", "Romirez", "Riker", "Abbington", "Axworthy", "Arora", "Tray", "R.Tey", "A.Clef", "Amathor", "Jesus", "Joker", "Lemon", "Boucher", "Enes" };
+        [Description("List Of Names [Can Be Edited Without Errors] ")]
+        public List<string> HumanNames { get; set; } = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon" };
 
     }
 }
