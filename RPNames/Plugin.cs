@@ -25,7 +25,7 @@ namespace RPNames
         {
             if (Config.HumanNames.Count == 0)
             {
-                NickNames = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon", "C. Cobble", "O. May", "V. Base", "D. Kevinson", "I. Zenix" };
+                NickNames = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon", "C. Cobble", "O. May", "V. Base", "D. Kevinson", "I. Zenix", "Z. Vai,", "A. Vorbixon", "T. Novix", "K. Water", "A. Ballix", "E. Simoned", "E. Simoned", "A. Zinxon", "Y. Morb" };
             }
             else
             {
