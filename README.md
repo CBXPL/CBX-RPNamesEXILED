@@ -10,3 +10,5 @@
 # What to Expect?
 1. Fixes
 2. Updates When New Exiled`s official Update Releases
+
+# Exiled 8.11+
