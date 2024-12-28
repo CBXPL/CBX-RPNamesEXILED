@@ -60,16 +60,6 @@
             <param name="item"><inheritdoc cref="P:Exiled.CustomItems.API.EventArgs.OwnerEscapingEventArgs.Item"/></param>
             <param name="ev">The <see cref="T:Exiled.Events.EventArgs.Player.EscapingEventArgs"/> instance.</param>
         </member>
-        <member name="M:Exiled.CustomItems.API.EventArgs.OwnerEscapingEventArgs.#ctor(Exiled.API.Features.Items.Item,Exiled.API.Features.Player,PlayerRoles.RoleTypeId,Exiled.API.Enums.EscapeScenario,System.Collections.Generic.KeyValuePair{Respawning.SpawnableTeamType,System.Single})">
-            <summary>
-            Initializes a new instance of the <see cref="T:Exiled.CustomItems.API.EventArgs.OwnerEscapingEventArgs"/> class.
-            </summary>
-            <param name="item"><inheritdoc cref="P:Exiled.CustomItems.API.EventArgs.OwnerEscapingEventArgs.Item"/></param>
-            <param name="player"><inheritdoc cref="P:Exiled.Events.EventArgs.Player.EscapingEventArgs.Player"/></param>
-            <param name="newRole"><inheritdoc cref="P:Exiled.Events.EventArgs.Player.EscapingEventArgs.NewRole"/></param>
-            <param name="escapeScenario"><inheritdoc cref="P:Exiled.Events.EventArgs.Player.EscapingEventArgs.EscapeScenario"/></param>
-            <param name="respawnTickets"><inheritdoc cref="P:Exiled.Events.EventArgs.Player.EscapingEventArgs.RespawnTickets"/></param>
-        </member>
         <member name="P:Exiled.CustomItems.API.EventArgs.OwnerEscapingEventArgs.Item">
             <summary>
             Gets the item in the player's inventory.
@@ -326,15 +316,8 @@
         </member>
         <member name="P:Exiled.CustomItems.API.Features.CustomItem.ShouldMessageOnGban">
             <summary>
-            Gets a value indicating whether or not this item causes things to happen that may be considered hacks, and thus be shown to global moderators as being present in a player's inventory when they gban them.
+            Gets a value indicating whether this item causes things to happen that may be considered hacks, and thus be shown to global moderators as being present in a player's inventory when they gban them.
             </summary>
-        </member>
-        <member name="M:Exiled.CustomItems.API.Features.CustomItem.Get(System.Int32)">
-            <summary>
-            Gets a <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> with a specific ID.
-            </summary>
-            <param name="id">The <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> ID.</param>
-            <returns>The <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> matching the search, <see langword="null"/> if not registered.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.Get(System.UInt32)">
             <summary>
@@ -352,10 +335,10 @@
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.Get(System.Type)">
             <summary>
-            Gets a <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> with a specific type.
+            Retrieves a collection of <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> instances that match a specified type.
             </summary>
             <param name="t">The <see cref="T:System.Type"/> type.</param>
-            <returns>The <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> matching the search, <see langwod="null"/> if not registered.</returns>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing all registered <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> of the specified type.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGet(System.UInt32,Exiled.CustomItems.API.Features.CustomItem@)">
             <summary>
@@ -363,7 +346,7 @@
             </summary>
             <param name="id">The <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> ID to look for.</param>
             <param name="customItem">The found <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>, <see langword="null"/> if not registered.</param>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was found or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was found.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGet(System.String,Exiled.CustomItems.API.Features.CustomItem@)">
             <summary>
@@ -371,15 +354,15 @@
             </summary>
             <param name="name">The <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> name to look for.</param>
             <param name="customItem">The found <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>, <see langword="null"/> if not registered.</param>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was found or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was found.</returns>
         </member>
-        <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGet(System.Type,Exiled.CustomItems.API.Features.CustomItem@)">
+        <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGet(System.Type,System.Collections.Generic.IEnumerable{Exiled.CustomItems.API.Features.CustomItem}@)">
             <summary>
-            Tries to get a <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> with a specific type.
+            Attempts to retrieve a collection of <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> instances of a specified type.
             </summary>
             <param name="t">The <see cref="T:System.Type"/> of the item to look for.</param>
-            <param name="customItem">The found <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>, <see langword="null"/> if not registered.</param>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was found or not.</returns>
+            <param name="customItems">An output parameter that will contain the found <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> instances, or an empty collection if none are registered.</param>
+            <returns>A boolean value indicating whether any <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> instances of the specified type were found.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGet(Exiled.API.Features.Player,Exiled.CustomItems.API.Features.CustomItem@)">
             <summary>
@@ -420,7 +403,7 @@
             <param name="id">The ID of the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> to spawn.</param>
             <param name="position">The <see cref="T:UnityEngine.Vector3"/> location to spawn the item.</param>
             <param name="pickup">The <see cref="T:InventorySystem.Items.Pickups.ItemPickupBase"/> instance of the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>.</param>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was spawned or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was spawned.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TrySpawn(System.String,UnityEngine.Vector3,Exiled.API.Features.Pickups.Pickup@)">
             <summary>
@@ -429,7 +412,7 @@
             <param name="name">The name of the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> to spawn.</param>
             <param name="position">The <see cref="T:UnityEngine.Vector3"/> location to spawn the item.</param>
             <param name="pickup">The <see cref="T:InventorySystem.Items.Pickups.ItemPickupBase"/> instance of the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>.</param>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was spawned or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was spawned.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGive(Exiled.API.Features.Player,System.String,System.Boolean)">
             <summary>
@@ -449,20 +432,11 @@
             <param name="displayMessage">Indicates a value whether <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> or not.</param>
             <returns>Returns a value indicating if the player was given the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> or not.</returns>
         </member>
-        <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryGive(Exiled.API.Features.Player,System.Type,System.Boolean)">
-            <summary>
-            Gives to a specific <see cref="T:Exiled.API.Features.Player"/> a specic <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>.
-            </summary>
-            <param name="player">The <see cref="T:Exiled.API.Features.Player"/> to give the item to.</param>
-            <param name="t">The <see cref="T:System.Type"/> of the item to give.</param>
-            <param name="displayMessage">Indicates a value whether <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> or not.</param>
-            <returns>Returns a value indicating if the player was given the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> or not.</returns>
-        </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.RegisterItems(System.Boolean,System.Object)">
             <summary>
             Registers all the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>'s present in the current assembly.
             </summary>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> which contains all registered <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>'s.</returns>
         </member>
@@ -472,7 +446,7 @@
             </summary>
             <param name="targetTypes">The <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Type"/> containing the target types.</param>
             <param name="isIgnored">A value indicating whether the target types should be ignored.</param>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> which contains all registered <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>'s.</returns>
         </member>
@@ -570,7 +544,7 @@
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> who will receive the item.</param>
             <param name="item">The <see cref="T:Exiled.API.Features.Items.Item"/> to be given.</param>
-            <param name="displayMessage">Indicates whether or not <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
+            <param name="displayMessage">Indicates whether <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.Give(Exiled.API.Features.Player,Exiled.API.Features.Pickups.Pickup,System.Boolean)">
             <summary>
@@ -578,14 +552,14 @@
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> who will receive the item.</param>
             <param name="pickup">The <see cref="T:InventorySystem.Items.Pickups.ItemPickupBase"/> to be given.</param>
-            <param name="displayMessage">Indicates whether or not <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
+            <param name="displayMessage">Indicates whether <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.Give(Exiled.API.Features.Player,System.Boolean)">
             <summary>
             Gives the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> to a player.
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> who will receive the item.</param>
-            <param name="displayMessage">Indicates whether or not <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
+            <param name="displayMessage">Indicates whether <see cref="M:Exiled.CustomItems.API.Features.CustomItem.ShowPickedUpMessage(Exiled.API.Features.Player)"/> will be called when the player receives the item.</param>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.Init">
             <summary>
@@ -625,13 +599,13 @@
             <summary>
             Registers a <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>.
             </summary>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was registered or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was registered.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.TryUnregister">
             <summary>
             Tries to unregister a <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/>.
             </summary>
-            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was unregistered or not.</returns>
+            <returns>Returns a value indicating whether the <see cref="T:Exiled.CustomItems.API.Features.CustomItem"/> was unregistered.</returns>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.SubscribeEvents">
             <summary>
@@ -700,7 +674,7 @@
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> acquiring the item.</param>
             <param name="item">The <see cref="T:Exiled.API.Features.Items.Item"/> being acquired.</param>
-            <param name="displayMessage">Whether or not the Pickup hint should be displayed.</param>
+            <param name="displayMessage">Whether the Pickup hint should be displayed.</param>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomItem.OnWaitingForPlayers">
             <summary>
@@ -744,7 +718,7 @@
         </member>
         <member name="P:Exiled.CustomItems.API.Features.CustomWeapon.FriendlyFire">
             <summary>
-            Gets or sets a value indicating whether or not to allow friendly fire with this weapon on FF-enabled servers.
+            Gets or sets a value indicating whether to allow friendly fire with this weapon on FF-enabled servers.
             </summary>
         </member>
         <member name="M:Exiled.CustomItems.API.Features.CustomWeapon.Spawn(UnityEngine.Vector3,Exiled.API.Features.Player)">
@@ -984,6 +958,14 @@
         <member name="M:Exiled.CustomItems.CustomItems.OnDisabled">
             <inheritdoc />
         </member>
+        <member name="T:Exiled.CustomItems.Events.MapHandler">
+            <summary>
+            Event Handlers for the CustomItem API.
+            </summary>
+        </member>
+        <member name="M:Exiled.CustomItems.Events.MapHandler.OnWaitingForPlayers">
+            <inheritdoc cref="P:Exiled.Events.Handlers.Server.WaitingForPlayers"/>
+        </member>
         <member name="T:Exiled.CustomItems.Events.PlayerHandler">
             <summary>
             Handles Player events for the CustomItem API.
@@ -991,14 +973,6 @@
         </member>
         <member name="M:Exiled.CustomItems.Events.PlayerHandler.OnChangingItem(Exiled.Events.EventArgs.Player.ChangingItemEventArgs)">
             <inheritdoc cref="T:Exiled.Events.EventArgs.Player.ChangingItemEventArgs"/>
-        </member>
-        <member name="T:Exiled.CustomItems.Events.RoundHandler">
-            <summary>
-            Event Handlers for the CustomItem API.
-            </summary>
-        </member>
-        <member name="M:Exiled.CustomItems.Events.RoundHandler.OnRoundStarted">
-            <inheritdoc cref="M:Exiled.Events.Handlers.Server.OnRoundStarted"/>
         </member>
         <member name="T:Exiled.CustomItems.Patches.PlayerInventorySee">
             <summary>

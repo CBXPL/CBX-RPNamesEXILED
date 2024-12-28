@@ -33,7 +33,7 @@ namespace RPNames
         [Description("Should SCP 049-2 Not Have Custom Names?")]
         public bool ZombieNames { get; set; } = false;
 
-        [Description("Use only human_names (dbois setting must be on!)?")]
+        [Description("Use only human_names (classd setting must be on!)?")]
         public bool randomnames { get; set; } = false;
 
         [Description("Should Nickname Clear After Death?")]
@@ -108,7 +108,7 @@ namespace RPNames
         };
 
         [Description("List Of Names [Can Be Edited Without Errors] ")]
-        public List<string> HumanNames { get; set; } = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon", "C. Cobble", "O. May", "V. Base", "D. Kevinson", "I. Zenix", "Z. Vai,", "A. Vorbixon", "T. Novix", "K. Water", "A. Ballix", "E. Simoned", "E. Simoned", "A. Zinxon", "Y. Morb" };
+        public List<string> HumanNames { get; set; } = new List<string> { "K. Thompson", "A. Stevenson", "N. Novel", "M. Xray ", "R. High", "E. Evans", "A. Woodson", "P. Bing", "C. Zenon", "C. Cobble", "O. May", "V. Base", "D. Kevinson", "I. Zenix", "Z. Vai,", "A. Vorbixon", "T. Novix", "K. Water", "A. Ballix", "E. Simoned", "E. Simoned", "A. Zinxon", "Y. Morb", "J. Zenix", "P. Pompinson" };
 
     }
 }

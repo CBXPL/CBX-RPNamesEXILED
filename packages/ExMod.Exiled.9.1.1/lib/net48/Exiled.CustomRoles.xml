@@ -177,12 +177,6 @@
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> the ability has ended for.</param>
         </member>
-        <member name="M:Exiled.CustomRoles.API.Features.ActiveAbility.ShowMessage(Exiled.API.Features.Player)">
-            <summary>
-            Called when the ability is successfully used.
-            </summary>
-            <param name="player">The <see cref="T:Exiled.API.Features.Player"/> using the ability.</param>
-        </member>
         <member name="M:Exiled.CustomRoles.API.Features.ActiveAbility.Selected(Exiled.API.Features.Player)">
             <summary>
             Called when the ability is selected.
@@ -265,7 +259,7 @@
             <summary>
             Registers all the <see cref="T:Exiled.CustomRoles.API.Features.CustomAbility"/>'s present in the current assembly.
             </summary>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomRoles.API.Features.CustomAbility"/> which contains all registered <see cref="T:Exiled.CustomRoles.API.Features.CustomAbility"/>'s.</returns>
         </member>
@@ -275,7 +269,7 @@
             </summary>
             <param name="targetTypes">The <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Type"/> containing the target types.</param>
             <param name="isIgnored">A value indicating whether the target types should be ignored.</param>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomRoles.API.Features.CustomAbility"/> which contains all registered <see cref="T:Exiled.CustomRoles.API.Features.CustomAbility"/>'s.</returns>
         </member>
@@ -456,7 +450,7 @@
         </member>
         <member name="P:Exiled.CustomRoles.API.Features.CustomRole.IgnoreSpawnSystem">
             <summary>
-            Gets or sets a value indicating whether the spawn system is ignored for this role or not.
+            Gets or sets a value indicating whether the spawn system is ignored for this role.
             </summary>
         </member>
         <member name="P:Exiled.CustomRoles.API.Features.CustomRole.KeepRoleOnChangingRole">
@@ -554,7 +548,7 @@
             <summary>
             Registers all the <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/>'s present in the current assembly.
             </summary>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/> which contains all registered <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/>'s.</returns>
         </member>
@@ -562,9 +556,9 @@
             <summary>
             Registers all the <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/>'s present in the current assembly.
             </summary>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
-            <param name="inheritAttributes">Whether or not inherited attributes should be taken into account for registration.</param>
+            <param name="inheritAttributes">Whether inherited attributes should be taken into account for registration.</param>
             <param name="assembly">Assembly which is calling this method.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/> which contains all registered <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/>'s.</returns>
         </member>
@@ -574,7 +568,7 @@
             </summary>
             <param name="targetTypes">The <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:System.Type"/> containing the target types.</param>
             <param name="isIgnored">A value indicating whether the target types should be ignored.</param>
-            <param name="skipReflection">Whether or not reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
+            <param name="skipReflection">Whether reflection is skipped (more efficient if you are not using your custom item classes as config objects).</param>
             <param name="overrideClass">The class to search properties for, if different from the plugin's config class.</param>
             <returns>A <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/> which contains all registered <see cref="T:Exiled.CustomRoles.API.Features.CustomRole"/>'s.</returns>
         </member>
@@ -698,7 +692,7 @@
             </summary>
             <param name="player">The <see cref="T:Exiled.API.Features.Player"/> to try giving the item to.</param>
             <param name="itemName">The name of the item to try adding.</param>
-            <returns>Whether or not the item was able to be added.</returns>
+            <returns>Whether the item was able to be added.</returns>
         </member>
         <member name="M:Exiled.CustomRoles.API.Features.CustomRole.GetSpawnPosition">
             <summary>

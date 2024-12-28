@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CBX-RPNamesEXILED\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RPNames||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB00170-404E-4797-B673-3B390186EED6}|RPNames\\RPNames.csproj|e:\\cbx-rpnamesexiled\\rpnames\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB00170-404E-4797-B673-3B390186EED6}|RPNames\\RPNames.csproj|solutionrelative:rpnames\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB00170-404E-4797-B673-3B390186EED6}|RPNames\\RPNames.csproj|e:\\cbx-rpnamesexiled\\rpnames\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB00170-404E-4797-B673-3B390186EED6}|RPNames\\RPNames.csproj|solutionrelative:rpnames\\plugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB00170-404E-4797-B673-3B390186EED6}|RPNames\\RPNames.csproj|e:\\cbx-rpnamesexiled\\rpnames\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RPNames",
+              "DocumentMoniker": "E:\\CBX-RPNamesEXILED\\RPNames\\RPNames.csproj",
+              "RelativeDocumentMoniker": "RPNames\\RPNames.csproj",
+              "ToolTip": "E:\\CBX-RPNamesEXILED\\RPNames\\RPNames.csproj",
+              "RelativeToolTip": "RPNames\\RPNames.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-09-12T20:04:03.756Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Plugin.cs",
+              "DocumentMoniker": "E:\\CBX-RPNamesEXILED\\RPNames\\Plugin.cs",
+              "RelativeDocumentMoniker": "RPNames\\Plugin.cs",
+              "ToolTip": "E:\\CBX-RPNamesEXILED\\RPNames\\Plugin.cs",
+              "RelativeToolTip": "RPNames\\Plugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABsAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:15:50.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.cs",
+              "DocumentMoniker": "E:\\CBX-RPNamesEXILED\\RPNames\\Config.cs",
+              "RelativeDocumentMoniker": "RPNames\\Config.cs",
+              "ToolTip": "E:\\CBX-RPNamesEXILED\\RPNames\\Config.cs",
+              "RelativeToolTip": "RPNames\\Config.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T13:15:46.492Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

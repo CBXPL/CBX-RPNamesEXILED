@@ -125,8 +125,9 @@ E:\CBX-RPNamesEXILED\RPNames\bin\Release\Exiled.Loader.xml
 E:\CBX-RPNamesEXILED\RPNames\bin\Release\Exiled.Permissions.xml
 E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNames.csproj.AssemblyReference.cache
 E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNames.csproj.CoreCompileInputs.cache
-E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNames.csproj.CopyComplete
 E:\CBX-RPNamesEXILED\RPNames\bin\Release\RPNamesCBX.dll
 E:\CBX-RPNamesEXILED\RPNames\bin\Release\RPNamesCBX.pdb
 E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNamesCBX.dll
 E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNamesCBX.pdb
+E:\CBX-RPNamesEXILED\RPNames\bin\Release\PluginAPI.dll
+E:\CBX-RPNamesEXILED\RPNames\obj\Release\RPNames.csproj.Up2Date

@@ -27,12 +27,12 @@
         </member>
         <member name="P:Exiled.Loader.Config.ShouldLoadOutdatedExiled">
             <summary>
-            Gets or sets a value indicating whether outdated Exiled versions should be loaded or not.
+            Gets or sets a value indicating whether outdated Exiled versions should be loaded.
             </summary>
         </member>
         <member name="P:Exiled.Loader.Config.ShouldLoadOutdatedPlugins">
             <summary>
-            Gets or sets a value indicating whether outdated plugins should be loaded or not.
+            Gets or sets a value indicating whether outdated plugins should be loaded.
             </summary>
         </member>
         <member name="P:Exiled.Loader.Config.ExiledDirectoryPath">
@@ -62,7 +62,7 @@
         </member>
         <member name="P:Exiled.Loader.Config.ShouldDownloadTestingReleases">
             <summary>
-            Gets or sets a value indicating whether testing releases have to be downloaded or not.
+            Gets or sets a value indicating whether testing releases have to be downloaded.
             </summary>
         </member>
         <member name="P:Exiled.Loader.Config.ExcludeAssemblies">
@@ -121,7 +121,7 @@
             Saves default distribution configs.
             </summary>
             <param name="configs">The configs to be saved, already serialized in yaml format.</param>
-            <returns>Returns a value indicating whether the configs have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the configs have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.ConfigManager.SaveSeparatedConfig(System.String,System.String)">
             <summary>
@@ -129,14 +129,14 @@
             </summary>
             <param name="pluginPrefix">The prefix of the plugin which its config is going to be saved.</param>
             <param name="configs">The configs to be saved, already serialized in yaml format.</param>
-            <returns>Returns a value indicating whether the configs have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the configs have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.ConfigManager.Save(System.Collections.Generic.SortedDictionary{System.String,Exiled.API.Interfaces.IConfig})">
             <summary>
             Saves plugin configs.
             </summary>
             <param name="configs">The configs to be saved.</param>
-            <returns>Returns a value indicating whether the configs have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the configs have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.ConfigManager.Read">
             <summary>
@@ -148,7 +148,7 @@
             <summary>
             Clears the configs.
             </summary>
-            <returns>Returns a value indicating whether configs have been cleared successfully or not.</returns>
+            <returns>Returns a value indicating whether configs have been cleared successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.ConfigManager.ReloadRemoteAdmin">
             <summary>
@@ -793,7 +793,7 @@
             Loads the translations of a plugin based on the actual distribution.
             </summary>
             <param name="plugin">The plugin which its translation has to be loaded.</param>
-            <param name="rawTranslations">The raw translations to check whether or not the plugin already has a translation config.</param>
+            <param name="rawTranslations">The raw translations to check whether the plugin already has a translation config.</param>
             <returns>The <see cref="T:Exiled.API.Interfaces.ITranslation"/> of the desired plugin.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.Reload">
@@ -807,7 +807,7 @@
             Saves default distribution translations.
             </summary>
             <param name="translations">The translations to be saved, already serialized in yaml format.</param>
-            <returns>Returns a value indicating whether the translations have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the translations have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.SaveSeparatedTranslation(System.String,System.String)">
             <summary>
@@ -815,14 +815,14 @@
             </summary>
             <param name="pluginPrefix">The prefix of the plugin which its translation is going to be saved.</param>
             <param name="translations">The translations to be saved, already serialized in yaml format.</param>
-            <returns>Returns a value indicating whether the translations have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the translations have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.Save(System.Collections.Generic.SortedDictionary{System.String,Exiled.API.Interfaces.ITranslation})">
             <summary>
             Saves plugin translations.
             </summary>
             <param name="translations">The translations to be saved.</param>
-            <returns>Returns a value indicating whether the translations have been saved successfully or not.</returns>
+            <returns>Returns a value indicating whether the translations have been saved successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.Read">
             <summary>
@@ -834,14 +834,14 @@
             <summary>
             Clears the translations.
             </summary>
-            <returns>Returns a value indicating whether translations have been cleared successfully or not.</returns>
+            <returns>Returns a value indicating whether translations have been cleared successfully.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.LoadDefaultTranslation(Exiled.API.Interfaces.IPlugin{Exiled.API.Interfaces.IConfig},System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             Loads the translations of a plugin based on the default distribution.
             </summary>
             <param name="plugin">The plugin which its translation has to be loaded.</param>
-            <param name="rawTranslations">The raw translations to check whether or not the plugin already has a translation config.</param>
+            <param name="rawTranslations">The raw translations to check whether the plugin already has a translation config.</param>
             <returns>The <see cref="T:Exiled.API.Interfaces.ITranslation"/> of the desired plugin.</returns>
         </member>
         <member name="M:Exiled.Loader.TranslationManager.LoadSeparatedTranslation(Exiled.API.Interfaces.IPlugin{Exiled.API.Interfaces.IConfig})">
@@ -880,7 +880,7 @@
         </member>
         <member name="M:Exiled.Loader.Updater.CreateHttpClient">
             <summary>
-            Creates a HTTP Client, and checks at the Exiled-Official GitHub repository.
+            Creates a HTTP Client, and checks at the ExMod-Team GitHub repository.
             </summary>
             <returns>Client determining if it was successful connecting to the Exiled GitHub repository.</returns>
         </member>
