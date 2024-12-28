@@ -11,4 +11,4 @@
 1. Fixes
 2. Updates When New Exiled`s official Update Releases
 
-# Exiled 8.11+
+# Exiled 9.1.1 (non reboot)+
